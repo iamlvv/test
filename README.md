@@ -3,6 +3,9 @@ This project contains 2 folders: client and server.
 ## STRUCTURE OF PROJECT
 First, cd to folder server and run command line: npm start to start the server at localhost 3001.
 After that, cd out and cd to the folder client and run command line: npm start to start the frontend.
+## TECHNOLOGY
+This project implements both server side and client side. 
+In terms of client side, I use ReactJS and a CSS framework - Tailwind CSS to design the user interface, Axios - a HTTP Client library to call API, Sweetalert2 - a library for popup windows. Meanwhile, in server side, I use ExpressJS - a backend framework, Twilio to implement sending SMS function, Realtime Firebase as Database. I also store Environment Variables in .env file for security.
 ## HOW TO USE
 This is the homepage of project.
 ![image](https://user-images.githubusercontent.com/48018773/217746077-23a35740-e83a-405c-b969-75029e0da6f7.png)
@@ -19,6 +22,4 @@ In case you type wrong access code, the failure popup shows up like this below.
 ![image](https://user-images.githubusercontent.com/48018773/217747425-e4f634ea-0d22-4b26-8e0d-326dce7ff11c.png)
 In case you type wrong phone number (system cannot find it in database), the failure popup shows up like this below.
 ![image](https://user-images.githubusercontent.com/48018773/217747620-652ba8d7-c9ac-420b-b4c6-bcf5a0b23369.png)
-## TECHNOLOGY
-This project implements both server side and client side. 
-In terms of client side, I use ReactJS and a CSS framework - Tailwind CSS to design the user interface, Axios - a HTTP Client library to call API, Sweetalert2 - a library for popup windows. Meanwhile, in server side, I use ExpressJS - a backend framework, Twilio to implement sending SMS function, Realtime Firebase as Database. I also store Environment Variables in .env file for security.
+
