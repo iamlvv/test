@@ -9,7 +9,7 @@ In terms of client side, I use ReactJS and a CSS framework - Tailwind CSS to des
 ## HOW TO USE
 This is the homepage of the project.
 ![image](https://user-images.githubusercontent.com/48018773/217746077-23a35740-e83a-405c-b969-75029e0da6f7.png)
-As you can see in the image above, there are 2 input fields, the first one is where you type your phone number (in this case it is my phone number: 0971144787 - string type). By default, the second input field is disabled until your phone number is checked by system. However, at this time, there is a problem with button Submit phone number. It is that it only works smoothly from the second click. This is something I have to consider strictly if I have more time and I have a chance to go with you further.
+As you can see in the image above, there are 2 input fields, the first one is where you type your phone number (in this case it is my phone number: 0971144787 - string type). By default, the second input field is disabled until your phone number is checked by system. However, at this time, there is a problem with button Submit phone number. It is that it only works smoothly from the second click (only with correct input). This is something I have to consider strictly if I have more time and I have a chance to go with you further.
 ![image](https://user-images.githubusercontent.com/48018773/217746538-6a3c0b73-d083-4a7d-af3a-4531ee8ebdbc.png)
 
 As you can see in the image above, the system has checked your phone number and found it in the database, the access code is then sent to your phone number; meanwhile, the second input field is enabled so that you can type the access code you have received recently.
