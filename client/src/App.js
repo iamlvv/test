@@ -12,7 +12,7 @@ function App() {
   const dbRef = ref(database);
   const [phoneReturn, setPhoneReturn] = React.useState("");
   const [accesscodeReturn, setAccesscodeReturn] = React.useState("");
-  //Working with firebase
+  //Working with firebase (refers to firebase and sweetalert2 documentation)
   const getPhoneNumber = () => {
     get(child(dbRef, `user/phone`))
       .then((snapshot) => {
@@ -122,7 +122,7 @@ function App() {
 
   return (
     <div className="text-center mt-20 ml-20 mr-20">
-      <form className="border" onSubmit={handleSubmit}>
+      <form className="border" onSubmit={(e) => handleSubmit(e)}>
         <h1 className="uppercase font-bold text-lg mt-5 mb-5">
           Coding Challenge
         </h1>
@@ -155,13 +155,13 @@ function App() {
               type="text"
               name="accesscode"
               className="border border-black"
-              disabled={!flag}
+              disabled={!flag}  //if phone number has not been checked yet or incorrect, then the input field is disabled
               required
             />
           </div>
         </div>
         <div className="mt-5 mb-5">
-          <button className="bg-orange-500 px-2 py-3 rounded-xl">
+          <button className="bg-orange-500 px-2 py-3 rounded-xl" disabled={!flag}>
             Submit access code
           </button>
         </div>
