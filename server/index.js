@@ -28,7 +28,7 @@ function sendSMS(from, to, body) {
 app.post('/gencode', function createNewAccessCode(req, res) {
     const { phone } = req.body;
     const code = Math.floor(100000 + Math.random() * 900000);
-    //sendSMS(process.env.TWILIO_PHONE_NUMBER, phone, `Your code is ${code}`);
+    sendSMS(process.env.TWILIO_PHONE_NUMBER, process.env.MY_PHONE_NUMBER, "Your code is " + code + "");
     res.send({ code });
     //res.status(201).send({ code });
 });

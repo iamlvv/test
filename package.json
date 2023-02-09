@@ -25,6 +25,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "firebase": "^9.17.1",
+    "sweetalert2": "^11.7.1",
     "twilio": "^4.7.2"
   }
 }
